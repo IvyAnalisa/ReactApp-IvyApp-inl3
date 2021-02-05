@@ -1,11 +1,19 @@
 import React from 'react';
 
+import {Routing} from './routes/Routing'
+import {NavigationBar} from'./components/navigationBar/NavigationBar'
+import {UserProvider} from './shared/global/provider/UserProvider'
+import './shared/global/css/Global.css'
 
-function App() {
+
+function App () {
   return (
-   
-     <h1>welcome to My App</h1>
-   
+  <UserProvider>
+  <Routing>
+     <NavigationBar/>
+     
+   </Routing>
+   </UserProvider>
   );
 }
 

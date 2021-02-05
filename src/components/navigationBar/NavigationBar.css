@@ -1,0 +1,24 @@
+.navigationBarWrapper{
+    display: grid;
+   grid-template-columns: 100 1fr;
+    background-color: cadetblue;
+}
+.logoType{
+   width:100px; 
+
+}
+.signIn{
+    grid-column: 8/10;
+    align-self: center;
+}
+.home{
+    
+    align-self: center;
+}
+.signIn,.home{
+    cursor: pointer;
+}
+.profile{
+    grid-column: 10/10;
+    align-self: left;
+}
